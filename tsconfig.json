@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "pretty": true,
+        "target": "ES6",
+        "outDir": "./compiled"
+    },
+    "include": [
+        "./engine/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
