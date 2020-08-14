@@ -2,9 +2,12 @@
   "name": "dev-assignment-ebanx",
   "version": "1.0.0",
   "description": "My solution for EBANX's take home assignment for Software Developer Role",
-  "main": "index.js",
+  "main": ".compiled/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test --reporter spec",
+    "build": "tsc",
+    "start": "tsc && node compiled/server.js",
+    "dev": "tsc -w && nodemon compiled/server.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +28,12 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^4.0.0",
+    "mocha": "^8.1.1",
+    "supertest": "^4.0.2",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "expect": "^26.4.0"
   }
 }
