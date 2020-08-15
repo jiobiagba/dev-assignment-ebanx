@@ -30,7 +30,7 @@ The engine folder also holds _server.ts_ which is the entry point of the applica
 Ensure the following on your computer before starting the application:
 * Git
 * Node v10 or greater
-* PostgresSQL database defined as a string in the format: postgresql://<username>:<password>@<host>:<port>/<database name>
+* PostgresSQL database defined as a string in the format: `postgresql://<username>:<password>@<host>:<port>/<database name>` (Save this string the **EBANX_ASSIGNMENT_DB** enrivonment variable
 * account table has been created in your PostgreSQL database using the query in tables.sql
  * ngrok installed
  
