@@ -1,5 +1,5 @@
 # EBANX Take-Home Coding Assignment
-This project is my solution to EBANX's take home assignment for their Software Developer Role. **_It is an app that was created to PASS ALL TEST requirements as given in the coding instructions._**
+This project is my solution to EBANX's take home assignment for their Software Engineer Role. **_It is an app that was created to PASS ALL TEST requirements as given in the coding instructions._**
 
 # Tech/Languages
 * TypeScript
