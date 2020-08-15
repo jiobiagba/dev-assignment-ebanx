@@ -2,6 +2,7 @@ import express, { Application, Request, Response } from "express"
 import http, { Server } from "http"
 import cors from "cors"
 import helmet from "helmet"
+import { AllRoutes } from "./routers/all-routers"
 const port = process.env.EBANX_PORT || 3002
 
 const app: Application = express()
@@ -11,6 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(helmet())
 
+app.use("/", AllRoutes)
 app.use("*", (req: Request, res: Response) => {
     res.status(200).json({
         message: "Welcome to Joseph's Solution for Ebanx's Software Developer Take-Home Assignment!"
